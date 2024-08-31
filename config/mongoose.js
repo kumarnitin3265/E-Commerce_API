@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 // connecting mongoose to its default server and ecommerceDB
-mongoose.connect("mongodb+srv://nk261889:AKqbIg883cqFuxwe@ecomdb.ausx6.mongodb.net/", {
+mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true
 });
 
